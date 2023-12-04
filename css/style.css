@@ -11,6 +11,7 @@
 *{  
     margin: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--light);
     color: var(--light-text);
 }
@@ -21,12 +22,16 @@ h1{
 
 section{
     height: 100dvh;
+    padding: 10px;
 }
 
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
+    align-items: center;
     border-bottom: 1px solid var(--accent);
+    height: 100px;
+    padding: 0px 10px
 }
 
 nav ul{
@@ -39,6 +44,8 @@ nav ul{
 
 nav a{
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #about{
@@ -49,14 +56,14 @@ nav a{
 
 .about-container{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     flex-direction: row-reverse;
-    width: 1000px;
 }
 
 .about-container>img{
-    height: 600px;
+    border-radius: 15px;
+    height: 500px;
 }
 
 .intro-container{
@@ -65,8 +72,29 @@ nav a{
     text-align: justify;
     justify-content: center;
     gap: 10px;
+    width: 620px;
 }
 
-.intro-container span{
+span{
     color: var(--accent);
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 1000px;
+}
+
+.skills-container>div{
+    border: 1px solid var(--primary);
+    border-radius: 15px;
 }
