@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarence's Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
         <div>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -18,7 +19,7 @@
         </div>
     </nav>
 
-    <section id="about">
+    <main id="about">
         <article class="about-container">
             <img src="/img/me-img.jpg" alt="Clarence's Picture">
             <div class="intro-container">
@@ -26,19 +27,20 @@
                     Hi, my name is <span>Clarence Joseph B. Castro</span><br> I'm a developer 
                 </h1>
                 <p>
-                    I am currently pursuing a Bachelor of Science degree in Information Technology at Batangas State University. In my third year, I am dedicated to enhancing my expertise as a full-stack developer. My passion lies in harnessing technology to conceive and implement innovative projects. I thrive in dynamic, collaborative environments where creativity and technical proficiency converge. Feel free to explore my ongoing portfolio to discover the exciting projects and experiences that reflect my commitment to the ever-evolving realm of Information Technology.
+                    I am currently pursuing a Bachelor of Science degree in Information Technology at Batangas State University. In my third year, I am dedicated to improving my expertise as a full-stack developer. My passion lies in harnessing technology to conceive and implement innovative projects. I thrive in dynamic, collaborative environments where creativity and technical proficiency converge. Feel free to explore my ongoing portfolio to discover the exciting projects and experiences that reflect my commitment to the ever-evolving realm of Information Technology.
                 </p>
             </div>
         </article>
-    </section>
+    </main>
 
     <section id="skills">
-        <h1>
+        <h1 class="heading">
             My <span>Skills</span>
         </h1>
 
         <div class="skills-container">         
-            <div>
+            <div class="skill-card">
+                <i class="fa-solid fa-globe fa-2xl" style="color: #E6ECE4;"></i>
                 <h2>
                     Web Design
                 </h2>
@@ -48,7 +50,8 @@
                 </p>
             </div>
     
-            <div>
+            <div class="skill-card">
+                <i class="fa-solid fa-code fa-2xl" style="color: #E6ECE4;"></i>
                 <h2>
                     Web Development
                 </h2>
@@ -58,7 +61,8 @@
                 </p>
             </div>
     
-            <div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database fa-2xl" style="color: #E6ECE4;"></i>
                 <h2>
                     Database Management
                 </h2>
@@ -68,7 +72,8 @@
                 </p>
             </div>
     
-            <div>
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-line fa-2xl" style="color: #E6ECE4;"></i>
                 <h2>
                     Data Science & Analytics
                 </h2>
@@ -81,7 +86,7 @@
     </section>
 
     <section id="projects">
-        <h1>
+        <h1 class="heading">
             My <span>Projects</span>
         </h1>
 
@@ -89,10 +94,47 @@
     </section>
 
 
-    <section id="contact">
-        <h1>
-            Contact <span>Me</span>
+    <footer id="contact">
+        <h1 class="heading">
+            <span>Contact</span> Me
         </h1>
-    </section>
+
+        <div class="contact-container">
+            <div class="contact-card">
+                <i class="fa-solid fa-phone fa-2xl"></i>
+                <div>
+                    <h3>
+                        CONTACT NUMBER
+                    </h3>
+    
+                    <p>
+                        09934231971
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+                <div>
+                    <h3>
+                        FACEBOOK
+                    </h3>
+    
+                    <a href="https://www.facebook.com/clarencejoseph.b.castro/">Clarence Joseph Castro</a>
+                </div>
+            </div>
+            
+            <div class="contact-card"> 
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+                <div>
+                    <h3>
+                        INSTAGRAM
+                    </h3>
+
+                    <a href="https://www.instagram.com/tengie.e/">@tengie.e</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
