@@ -13,7 +13,11 @@
     }
 
     .about-container>img{
-        height: 300px;
+        width: 80dvw;
+    }
+
+    .intro-container{
+        width: 90dvw;
     }
 
     #skills, #projects{
@@ -50,4 +54,15 @@
         gap: 30px;
     }
 
+}
+
+@media screen and (min-width:700px) and (max-width:1150px){
+
+    #skills, #projects{
+        height: auto;
+    }
+
+    .skills-container, .project-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
