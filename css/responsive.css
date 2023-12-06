@@ -1,8 +1,4 @@
 @media screen and (max-width:700px) {
-    *{
-        /* overflow-x: hidden; */
-    }
-
 
     nav a{
         font-size: 1.2rem;
@@ -56,9 +52,19 @@
 
 }
 
-@media screen and (min-width:700px) and (max-width:1150px){
+@media screen and (min-width:700px) and (max-width:1000px){
 
-    #skills, #projects{
+
+    .about-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-container img, .intro-container{
+        width: 60dvw;
+    }
+
+    #skills, #projects, #about{
         height: auto;
     }
 
