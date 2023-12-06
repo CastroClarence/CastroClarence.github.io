@@ -29,15 +29,23 @@ h1{
     font-size: 2rem;
 }
 
-section, main{
-    height: 100dvh;
+.container {
+    width: 100%;
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+nav {
+    background-color: var(--light);
     padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav{
     display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid var(--accent);
+    justify-content: flex-start;
     align-items: center;
     height: 100px;
     padding: 0px 10px;
@@ -57,6 +65,24 @@ nav a{
     font-weight: bold;
 }
 
+nav a:active{
+    font-weight: bolder;
+}
+
+nav a:hover{
+    color: var(--accent);
+}
+
+nav li:hover, .project-card>img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+#about, #projects, #skills, footer{
+    padding-top: 100px;
+    padding-inline: 50px;
+}
+
 #about{
     display: flex;
     justify-content: center;
@@ -65,17 +91,29 @@ nav a{
 
 .about-container{
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding: 10px;
     flex-direction: row-reverse;
+}
+
+/* shadow for all div */
+.shadow{
+    -webkit-box-shadow: 3px 3px 10px 3px #d0d0d0;
+    -moz-box-shadow: 3px 3px 10px 3px #d0d0d0;
+    box-shadow: 3px 3px 10px 3px #d0d0d0;
 }
 
 .about-container>img{
     border-radius: 15px;
     height: 500px;
-    -webkit-box-shadow: 3px 3px 10px 3px var(--secondary);
-    -moz-box-shadow: 3px 3px 10px 3px var(--secondary);
-    box-shadow: 3px 3px 10px 3px var(--secondary);
+}
+
+.about-container>img:hover, .skill-card:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 5px 5px 10px 3px #9e9e9e;
+    -moz-box-shadow: 5px 5px 10px 3px #9e9e9e;
+    box-shadow: 5px 5px 10px 3px #9e9e9e;
 }
 
 .intro-container{
@@ -84,7 +122,6 @@ nav a{
     text-align: justify;
     justify-content: center;
     gap: 10px;
-    width: 620px;
 }
 
 span{
@@ -92,44 +129,23 @@ span{
 }
 
 .heading>span{
-    color: var(--light-text);
+    color: var(--accent);
 }
 
 #skills{
     display: flex;
     flex-direction: column;
+    height: 50dvh;
 }
 
 .skills-container{
-    background:
-    linear-gradient(135deg,#0000 18.75%,#a9c5ad 0 31.25%,#0000 0),
-    repeating-linear-gradient(45deg,#a9c5ad -6.25% 6.25%,#74977a 0 18.75%);
-    background-size: 64px 64px;
-
-    height: 800px;
-    width: 1200px;
     display: grid;
-    align-self: center;
+    margin: auto;
     justify-content: center;
-    align-content: center;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 300px 300px;
-    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px;
+    gap: 50px;
     border-radius: 15px;
-    -webkit-box-shadow: 3px 3px 10px 3px var(--secondary);
-    -moz-box-shadow: 3px 3px 10px 3px var(--secondary);
-    box-shadow: 3px 3px 10px 3px var(--secondary);
-}
-
-.skills-container>div{
-    padding: 10px;
-    gap: 30px;
-    border-radius: 15px;
-    background: rgba(116,151,122,0.5);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(116,151,122,0.25);
-
 }
 
 .skill-card{
@@ -137,19 +153,51 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    gap: 30px;
+    border-radius: 15px;
+    background: var(--light);
 }
 
 .skill-card>p{
-    color: var(--dark-text);
+    color: var(--light-text);
     text-align: justify;
 }
 
 .skill-card>h2{
-    color: var(--dark-text);
+    color: var(--light-text);
 }
 
 .skill-card>i{
-    font-size: 3rem;
+    font-size: 4rem;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 30px;
+    background-color: var(--light);
+}
+.project-card>img{
+    border-radius: 15px;
+    width: 90%;
 }
 
 footer{

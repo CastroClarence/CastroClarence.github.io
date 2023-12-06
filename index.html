@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarence's Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <div>
+    <nav class="shadow">
+        <div class="container">
             <ul>
                 <li><a href="#">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -21,10 +22,10 @@
 
     <main id="about">
         <article class="about-container">
-            <img src="/img/me-img.jpg" alt="Clarence's Picture">
+            <img src="/img/me-img.jpg" alt="Clarence's Picture" class="shadow">
             <div class="intro-container">
                 <h1>
-                    Hi, my name is <span>Clarence Joseph B. Castro</span><br> I'm a developer 
+                    Hi, my name is <span>Clarence Joseph B. Castro</span><br> I'm a &lt;developer&gt;
                 </h1>
                 <p>
                     I am currently pursuing a Bachelor of Science degree in Information Technology at Batangas State University. In my third year, I am dedicated to improving my expertise as a full-stack developer. My passion lies in harnessing technology to conceive and implement innovative projects. I thrive in dynamic, collaborative environments where creativity and technical proficiency converge. Feel free to explore my ongoing portfolio to discover the exciting projects and experiences that reflect my commitment to the ever-evolving realm of Information Technology.
@@ -35,12 +36,12 @@
 
     <section id="skills">
         <h1 class="heading">
-            My <span>Skills</span>
+            MY <span>SKILLS</span>
         </h1>
 
         <div class="skills-container">         
-            <div class="skill-card">
-                <i class="fa-solid fa-globe fa-2xl" style="color: #E6ECE4;"></i>
+            <div class="skill-card shadow">
+                <i class="fa-solid fa-globe fa-2xl" style="color: #151B13;"></i>
                 <h2>
                     Web Design
                 </h2>
@@ -50,8 +51,8 @@
                 </p>
             </div>
     
-            <div class="skill-card">
-                <i class="fa-solid fa-code fa-2xl" style="color: #E6ECE4;"></i>
+            <div class="skill-card shadow">
+                <i class="fa-solid fa-code fa-2xl" style="color: #151B13;"></i>
                 <h2>
                     Web Development
                 </h2>
@@ -61,8 +62,8 @@
                 </p>
             </div>
     
-            <div class="skill-card">
-                <i class="fa-solid fa-database fa-2xl" style="color: #E6ECE4;"></i>
+            <div class="skill-card shadow">
+                <i class="fa-solid fa-database fa-2xl" style="color: #151B13;"></i>
                 <h2>
                     Database Management
                 </h2>
@@ -72,8 +73,8 @@
                 </p>
             </div>
     
-            <div class="skill-card">
-                <i class="fa-solid fa-chart-line fa-2xl" style="color: #E6ECE4;"></i>
+            <div class="skill-card shadow">
+                <i class="fa-solid fa-chart-line fa-2xl" style="color: #151B13;"></i>
                 <h2>
                     Data Science & Analytics
                 </h2>
@@ -87,16 +88,30 @@
 
     <section id="projects">
         <h1 class="heading">
-            My <span>Projects</span>
+            MY <span>PROJECTS</span>
         </h1>
 
-        <a href="https://clarenceCastro.github.io/clinic-web">Clinic Website</a>
+        <div class="project-container">
+            <div class="project-card shadow" >
+                <img src="/img/portfolio-1.png" alt="image of clinic project" class="shadow">
+                <h2>Tooth-To-Bytes: A Dental Management System</h2>
+                <p>Developed a fully functional web-based dental management information system using HTML, CSS, PHP, and JS.</p>
+                <a href="https://github.com/CastroClarence/clinic-project"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </div>
+
+            <div class="project-card shadow">
+                <img src="/img/portfolio-2.png" alt="image of portfolio" class="shadow">
+                <h2>Clarence's Portfolio</h2>
+                <p>I created a portfolio website to showcase my projects and credentials.</p>
+                <a href="https://github.com/CastroClarence/CastroClarence.github.io"><i class="fa-brands fa-github fa-2xl"></i></a>
+            </div>
+        </div>
     </section>
 
 
     <footer id="contact">
         <h1 class="heading">
-            <span>Contact</span> Me
+            LET'S WORK TOGETHER
         </h1>
 
         <div class="contact-container">
