@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --text: 185 25% 10%;
+    --background: 180 23% 95%;
+    --background-transparent: 180 23% 90%;
+    --primary: 178 23% 29%;
+    --secondary: 250 23% 69%;
+    --accent: 278 32% 46%;
+  }
+  .dark {
+    --text: 185 25% 90%;
+    --background: 180 23% 5%;
+    --background-transparent: 180 23% 10%;
+    --primary: 178 23% 71%;
+    --secondary: 250 23% 31%;
+    --accent: 278 32% 54%;
+  }
+  body {
+    @apply dark:bg-background
+    dark:text-text
+  }
+  p{
+    @apply text-xs
+  }
+}
+
+
+
