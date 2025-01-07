@@ -8,7 +8,7 @@ export default function Skills() {
         <>
             <div className="flex flex-col justify-center items-center gap-5 p-5">
                 <Header header='My Skills' sub='Dedicated to learn and improve.' />
-                <div className="flex flex-col justify-center items-center gap-16 max-w-screen-xs 2xl:max-w-screen-xl">
+                <div className="flex flex-col justify-center items-center gap-16 max-w-screen-xs xl:max-w-screen-xl">
                     <div className="h-56 w-11/12  2xl:w-1/2 sm:h-64 xl:h-80 2xl:h-56 rounded-2xl">
                         <Carousel pauseOnHover
                             indicators={false}
@@ -39,16 +39,16 @@ export default function Skills() {
                         </Carousel>
                     </div>
                     <div className="flex flex-col justify-center items-center gap-5">
-                        <h1 className="text-2xl 2xl:text-5xl font-bold antialiased text-primary">Technologies I'm Familiar With</h1>
+                        <h1 className="text-2xl xl:text-5xl font-bold antialiased text-primary">Technologies I'm Familiar With</h1>
                         <div className="flex flex-wrap gap-2 ">
-                            <i className="devicon-html5-plain colored text-5xl 2xl:text-8xl"></i>
-                            <i className="devicon-css3-plain colored text-5xl 2xl:text-8xl"></i>
-                            <i className="devicon-tailwindcss-original colored text-5xl 2xl:text-8xl"></i>
-                            <i className="devicon-javascript-plain colored text-5xl 2xl:text-8xl"></i>
-                            <i className="devicon-react-original-wordmark colored text-5xl 2xl:text-8xl"></i>
-                            <i className="devicon-python-plain-wordmark colored text-5xl 2xl:text-8xl"></i>
-                            <i className="devicon-django-plain-wordmark colored text-5xl 2xl:text-8xl"></i>
-                            <i className="devicon-azuresqldatabase-plain colored text-5xl 2xl:text-8xl"></i>
+                            <i className="devicon-html5-plain colored text-5xl xl:text-8xl"></i>
+                            <i className="devicon-css3-plain colored text-5xl xl:text-8xl"></i>
+                            <i className="devicon-tailwindcss-original colored text-5xl xl:text-8xl"></i>
+                            <i className="devicon-javascript-plain colored text-5xl xl:text-8xl"></i>
+                            <i className="devicon-react-original-wordmark colored text-5xl xl:text-8xl"></i>
+                            <i className="devicon-python-plain-wordmark colored text-5xl xl:text-8xl"></i>
+                            <i className="devicon-django-plain-wordmark colored text-5xl xl:text-8xl"></i>
+                            <i className="devicon-azuresqldatabase-plain colored text-5xl xl:text-8xl"></i>
                         </div>
                     </div>
                 </div>

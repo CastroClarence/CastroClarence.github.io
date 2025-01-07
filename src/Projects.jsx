@@ -14,7 +14,7 @@ export default function Projects(){
                 <Header header='My Projects' sub='Here are some projects that I have worked on.'/>
             {/* Cards */}
             <div className="2xl:p-10 flex justify-center ">
-                <div className="2xl:grid flex flex-col gap-5 2xl:grid-cols-5 2xl:grid-rows-2 w-2/3">
+                <div className=" flex flex-col gap-5  w-2/3">
                     <div className=" bg-background-transparent p-5 flex flex-col justify-between border-gray-400 dark:bg-background-transparent rounded-2xl hover:scale-105 duration-500  col-span-3">
                         <img className="rounded-t-lg" src={portfolio} alt="" />
                         <div>

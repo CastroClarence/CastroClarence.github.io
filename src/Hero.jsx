@@ -49,7 +49,7 @@ export default function Hero() {
     }, [showRole]);
 
     return (
-        <div className="flex justify-around lg:p-10 mt-5 p-1 2xl:max-h-max 2xl:h-screen items-center flex-col-reverse 2xl:flex-row">
+        <div className="flex justify-around lg:p-10 mt-5 p-1 2xl:max-h-max 2xl:h-screen items-center flex-col-reverse xl:flex-row">
             <div className="space-y-5 w-3/4 2xl:w-1/2 ">
                 <h1 className="lg:text-5xl text-2xl font-bold antialiased ">
                     {introText}
