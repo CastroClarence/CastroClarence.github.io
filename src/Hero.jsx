@@ -71,7 +71,7 @@ export default function Hero() {
                     )}
                 </h1>
                 {showDescription && (
-                    <p className="text-wrap text-justify 2xl:text-base">
+                    <p className="text-wrap text-justify 2xl:text-base xl:mr-5">
                         {descriptionText}
                     </p>
                 )}
