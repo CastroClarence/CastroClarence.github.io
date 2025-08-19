@@ -30,12 +30,14 @@ function Credentials() {
   ];
 
   return (
-    <aside className="card bg-base-100 w-96 border border-base-200 p-4 
-                    flex-1 overflow-y-auto 
+    <aside className="card bg-base-100 lg:w-96 border border-base-200 p-4 
+                    flex-1 lg:overflow-y-auto overflow-x-auto
+                    flex-col
                     max-h-[calc(100vh-64px)] 
-                    sticky top-5 ">
+                    w-full
+                    lg:sticky lg:top-5 ">
       <p className="text-xl font-bold my-2 flex gap-2"><CertificateIcon/> Credentials</p>
-      <div className="flex flex-col gap-3">
+      <div className="flex lg:flex-col gap-3">
         {creds_list.map((cred) => (
             <div className="card bg-base-100 w-full card-border hover:bg-base-300">
                 <figure>

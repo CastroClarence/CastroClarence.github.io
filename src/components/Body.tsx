@@ -29,7 +29,7 @@ function Body() {
     <div className="flex-2 p-5 border-1 rounded-box mb-4 border-base-200">
         <div className='flex gap-4'>
             <div>
-                <img src={profile} alt="Clarence Joseph Castro's profile" className='h-30 rounded'/>
+                <img src={profile} alt="Clarence Joseph Castro's profile" className='h-35 object-contain'/>
             </div>
             <div className='relative w-full'>
                 <div className='absolute top-1 right-1'>
@@ -38,7 +38,7 @@ function Body() {
                 <h1 className="text-2xl font-bold my-2">Clarence Joseph Castro</h1>
                 <h2 className="font-bold">Aspiring Web Developer</h2>
                 <p>San Jose, Batangas</p>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 flex-wrap'>
                     {socials.map((social) => 
                         social.url ?
                         <a href={social.url}>
@@ -47,8 +47,9 @@ function Body() {
                             </div>
                         </a>
                         :
-                        <div className="badge hover:bg-base-300">
-                            <img src={social.icon} alt={social.name + ' Icon'}  className='size-5'/> {social.name}
+                        <div className="badge hover:bg-base-300 whitespace-normal break-words h-fit">
+                            <img src={social.icon} alt={social.name + ' Icon'} className="size-5 shrink-0" />
+                            <span className="break-all">{social.name}</span>
                         </div>
                     )}
                 </div>

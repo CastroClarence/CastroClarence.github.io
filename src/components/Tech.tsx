@@ -18,7 +18,7 @@ function Tech() {
         <div className='flex gap-4 flex-col'>
             <div>
                 <p className='font-semibold'>Back-end</p>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 flex-wrap'>
                 {backend_list.map((backend) => 
                     <div className="badge">{backend}</div>
                 )}
@@ -27,7 +27,7 @@ function Tech() {
 
             <div>
                 <p className='font-semibold'>Front-end</p>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 flex-wrap'>
                 {frontend_list.map((frontend) => 
                     <div className="badge">{frontend}</div>
                 )}
@@ -36,7 +36,7 @@ function Tech() {
 
             <div>
                 <p className='font-semibold'>Developer Tools</p>
-                <div className='flex gap-2'>
+                <div className='flex gap-2 flex-wrap'>
                 {dev_tools.map((tool) => 
                     <div className="badge">{tool}</div>
                 )}

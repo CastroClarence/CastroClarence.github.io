@@ -59,7 +59,7 @@ function Projects() {
                                 <li>{detail}</li>
                             )}
                         </ul>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 flex-wrap">
                             {project.techs.map((tech) => 
                                 <div className="badge">{tech}</div>
                             )}
