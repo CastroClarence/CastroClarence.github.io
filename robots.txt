@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://CastroClarence.github.io/sitemap.xml
