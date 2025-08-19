@@ -6,7 +6,7 @@ import Credentials from './components/Credentials'
 function App() {
 
   return (
-    <div className='px-24 pt-15 flex flex-col gap-4'>
+    <div className='lg:px-24 px-10 pt-15 flex flex-col gap-4'>
       {/* <Navigation /> */}
       <div className='flex gap-4 flex-col-reverse lg:flex-row'>
         <Credentials/>
