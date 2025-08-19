@@ -17,7 +17,7 @@ function Projects() {
                 'Designed and built a full-featured MIS to manage events, memberships and elections for PAPSAS.',
                 'Integrated data analytics with PostgreSQL for performance tracking and decision-making.'
             ],
-            'url' : 'https://papsasinc.com',
+            'url' : 'https://papsasinc.com/about_dev',
             'techs' : [
                 'Django', 'Javascript', 'CSS' , 'plotly.js'
             ]
