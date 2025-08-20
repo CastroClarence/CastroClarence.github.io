@@ -29,7 +29,7 @@ function Body() {
     <div className="flex-2 p-5 border-1 rounded-box mb-4 border-base-200">
         <div className='flex gap-4'>
             <div>
-                <img src={profile} alt="Clarence Joseph Castro's profile" className='h-35 object-contain'/>
+                <img src={profile} alt="Clarence Joseph Castro | Clarence Castro | Clarence Joseph Baroja Castro | CastroClarence | Clarence Joseph B. Castro | Software Developer | Profile" className='h-35 object-contain'/>
             </div>
             <div className='relative w-full'>
                 <div className='absolute top-1 right-1'>
